@@ -20,6 +20,7 @@
         app:boxStrokeWidth="1dp"
         app:boxStrokeWidthFocused="2dp"
         app:startIconDrawable="@drawable/avatar24"
+        android:hint="Username"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -28,7 +29,8 @@
             android:id="@+id/userName"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:inputType="text"/>
+            android:inputType="text"
+            android:paddingStart="40dp"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -39,6 +41,8 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="10dp"
+        app:startIconDrawable="@drawable/call24"
+        android:hint="Phone no"
         style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -48,7 +52,8 @@
             android:id="@+id/userEmail"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:inputType="textEmailAddress"/>
+            android:inputType="textEmailAddress"
+            android:paddingStart="40dp"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -59,6 +64,8 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="10dp"
+        app:startIconDrawable="@drawable/email24"
+        android:hint="Email"
         style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -68,7 +75,8 @@
             android:id="@+id/userPhone"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:inputType="phone"/>
+            android:inputType="phone"
+            android:paddingStart="40dp"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -78,6 +86,8 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="10dp"
+        app:startIconDrawable="@drawable/location24"
+        android:hint="Address"
         style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -87,7 +97,8 @@
             android:id="@+id/userAddress"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:inputType="text"/>
+            android:inputType="text"
+            android:paddingStart="40dp"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
