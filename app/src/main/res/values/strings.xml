@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">SQLiteCurd</string>
+    <string name="info_text">This is a practice application that shows the working of SQLite with android app by performing CURD operations.</string>
+    <string name="user_text">This app can perform either of the operation mention below:</string>
 </resources>
