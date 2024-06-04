@@ -19,6 +19,7 @@
         app:boxStrokeColor="#D81E5B"
         app:boxStrokeWidth="1dp"
         app:boxStrokeWidthFocused="2dp"
+        app:startIconDrawable="@drawable/avatar24"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
