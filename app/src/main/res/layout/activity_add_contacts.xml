@@ -5,101 +5,154 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F0F8FF"
     tools:context=".AddContacts">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:gravity="center_vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/addcontact" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:text="Add new contact"
+            android:textColor="@color/black"
+            android:textSize="32sp" />
+
+    </LinearLayout>
 
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout"
         style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginStart="10dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="200dp"
-        android:layout_marginEnd="10dp"
-        app:boxStrokeColor="#D81E5B"
+        android:layout_marginEnd="20dp"
+        android:hint="Username"
+        app:boxStrokeColor="#0889CF"
         app:boxStrokeWidth="1dp"
         app:boxStrokeWidthFocused="2dp"
-        app:startIconDrawable="@drawable/avatar24"
-        android:hint="Username"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:startIconDrawable="@drawable/avatar24">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/userName"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:inputType="text"
-            android:paddingStart="40dp"/>
+            android:paddingStart="40dp" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout2"
+        style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginStart="10dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
-        android:layout_marginEnd="10dp"
-        app:startIconDrawable="@drawable/call24"
+        android:layout_marginEnd="20dp"
         android:hint="Phone no"
-        style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+        app:boxStrokeColor="#0889CF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/userEmail"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:inputType="textEmailAddress"
-            android:paddingStart="40dp"/>
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout3"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="10dp"
-        app:startIconDrawable="@drawable/email24"
-        android:hint="Email"
-        style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2">
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+        app:startIconDrawable="@drawable/call24">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/userPhone"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:inputType="phone"
-            android:paddingStart="40dp"/>
+            android:paddingStart="40dp" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="10dp"
-        app:startIconDrawable="@drawable/location24"
-        android:hint="Address"
+        android:id="@+id/textInputLayout3"
         style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Email"
+        app:boxStrokeColor="#0889CF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout3">
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2"
+        app:startIconDrawable="@drawable/email24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/userEmail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textEmailAddress"
+            android:paddingStart="40dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout4"
+        style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Address"
+        app:boxStrokeColor="#0889CF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout3"
+        app:startIconDrawable="@drawable/location24">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/userAddress"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:inputType="text"
-            android:paddingStart="40dp"/>
+            android:paddingStart="40dp" />
 
     </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/cancelBtn"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#09D58B"
+        android:text="Cancel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout4" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/saveBtn"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:backgroundTint="#09D58B"
+        android:text="Save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout4" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
